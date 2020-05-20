@@ -9,11 +9,11 @@ class MobileWebView extends StatelessWidget {
     Key key,
     @required this.child,
     this.content = const SizedBox.expand(),
-    @required this.statusBarColor,
+    this.statusBarIconColor = Colors.black87,
   }) : super(key: key);
 
   final Widget child, content;
-  final Color statusBarColor;
+  final Color statusBarIconColor;
   @override
   Widget build(BuildContext context) {
     if (kIsWeb && MediaQuery.of(context).size.width > 600)
@@ -22,9 +22,11 @@ class MobileWebView extends StatelessWidget {
           children: <Widget>[
             Expanded(
               child: Center(
-                child: MobileFrame(
-                  child: child,
-                  color: statusBarColor,
+                child: FittedBox(
+                  child: MobileFrame(
+                    child: child,
+                    iconColor: statusBarIconColor,
+                  ),
                 ),
               ),
             ),
