@@ -1,7 +1,8 @@
 name: mobile_web_view
-description: A Flutter package to showcase your mobile work on web.
+description: Wanted to show your awesome mobile app to other without letting them into the hassle of installing it? Thanks to flutter web (currently in beta) we have covered you.
 version: 0.1.0
 repository: https://github.com/SirusCodes/mobile_web_view
+homepage: https://github.com/SirusCodes/mobile_web_view
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

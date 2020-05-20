@@ -12,7 +12,18 @@ class MobileWebView extends StatelessWidget {
     this.statusBarIconColor = Colors.black87,
   }) : super(key: key);
 
-  final Widget child, content;
+  /// It is your main app that will show up under the mobile frame
+  /// and on mobile screen(if on mobile)
+  final Widget child;
+
+  /// Content is the widget that is show on the right side
+  ///
+  /// [defaut is SizedBox.expand() ]
+  final Widget content;
+
+  /// This will set the color for status icons
+  ///
+  /// [defaut is black]
   final Color statusBarIconColor;
   @override
   Widget build(BuildContext context) {
