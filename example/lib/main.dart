@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_web_view/mobile_web_view.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
       home: MobileWebView(
         statusBarColor: Colors.blue[200],
         content: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Text(
               "Mobile web view",
@@ -40,6 +41,32 @@ class MyApp extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                GestureDetector(
+                  onTap: () =>
+                      launch("https://pub.dev/packages/mobile_web_view"),
+                  child: Text(
+                    "pub.dev",
+                    style: TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blueAccent,
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () =>
+                      launch("https://github.com/SirusCodes/mobile_web_view"),
+                  child: Image.asset(
+                    "assets/github.png",
+                    height: 60,
+                  ),
+                ),
+              ],
+            )
           ],
         ),
         child: MyHomePage(title: 'Flutter Demo Home Page'),
@@ -116,6 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               'You have pushed the button this many times:',
+              textAlign: TextAlign.center,
             ),
             Text(
               '$_counter',
