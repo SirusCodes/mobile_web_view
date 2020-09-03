@@ -1,6 +1,6 @@
 name: mobile_web_view
 description: Wanted to show your awesome mobile app to other without letting them into the hassle of installing it? Thanks to flutter web (currently in beta) we have covered you.
-version: 0.1.0
+version: 0.1.2
 repository: https://github.com/SirusCodes/mobile_web_view
 homepage: https://github.com/SirusCodes/mobile_web_view
 
