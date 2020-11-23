@@ -7,8 +7,8 @@ import 'src/mobile_frame.dart';
 
 class MobileWebView extends StatelessWidget {
   const MobileWebView({
-    Key key,
-    @required this.child,
+    Key? key,
+    required this.child,
     this.content = const SizedBox.expand(),
     this.statusBarIconColor = Colors.black87,
     this.backgroundColor,
@@ -31,7 +31,7 @@ class MobileWebView extends StatelessWidget {
   /// This will set the background color
   ///
   /// [default is color of MaterialType.canvas]
-  final Color backgroundColor;
+  final Color? backgroundColor;
   @override
   Widget build(BuildContext context) {
     if (kIsWeb && MediaQuery.of(context).size.width > 600)

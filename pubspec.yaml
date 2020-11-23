@@ -1,11 +1,11 @@
 name: mobile_web_view
 description: Wanted to show your awesome mobile app to other without letting them into the hassle of installing it? Thanks to flutter web (currently in beta) we have covered you.
-version: 0.1.2
+version: 0.2.0-nullsafety.0
 repository: https://github.com/SirusCodes/mobile_web_view
 homepage: https://github.com/SirusCodes/mobile_web_view
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0-29.10.beta <3.0.0'
 
 dependencies:
   flutter:

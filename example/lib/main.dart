@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
 
 class Content extends StatelessWidget {
   const Content({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -43,20 +43,34 @@ class Content extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
-        Text(
-          "Mobile web view",
-          style: TextStyle(
-            fontSize: 100,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
-          textAlign: TextAlign.center,
+        Column(
+          children: <Widget>[
+            Text(
+              "Mobile web view",
+              style: TextStyle(
+                fontSize: 100,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              "Null-Safety✅",
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xFF16C60C),
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            GestureDetector(
-              onTap: () => launch("https://pub.dev/packages/mobile_web_view"),
+            TextButton(
+              onPressed: () =>
+                  launch("https://pub.dev/packages/mobile_web_view"),
               child: Text(
                 "pub.dev",
                 style: TextStyle(
@@ -67,8 +81,9 @@ class Content extends StatelessWidget {
                 ),
               ),
             ),
-            GestureDetector(
-              onTap: () => launch("https://github.com/SirusCodes/mobile_web_view"),
+            TextButton(
+              onPressed: () =>
+                  launch("https://github.com/SirusCodes/mobile_web_view"),
               child: Image.asset(
                 "assets/github.png",
                 height: 60,
@@ -82,7 +97,7 @@ class Content extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 

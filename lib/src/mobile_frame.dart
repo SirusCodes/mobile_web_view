@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class MobileFrame extends StatelessWidget {
   const MobileFrame({
-    Key key,
-    @required this.child,
-    this.iconColor,
+    Key? key,
+    required this.child,
+    required this.iconColor,
   }) : super(key: key);
   final Widget child;
   final Color iconColor;
@@ -52,7 +52,7 @@ class MobileFrame extends StatelessWidget {
 }
 
 class StatusBar extends StatelessWidget {
-  const StatusBar({Key key, this.iconColor}) : super(key: key);
+  const StatusBar({Key? key, required this.iconColor}) : super(key: key);
   final Color iconColor;
   @override
   Widget build(BuildContext context) {
