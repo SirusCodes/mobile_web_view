@@ -1,3 +1,7 @@
+## [0.2.0-nullsafety.0] - 23/11/2020
+
+Null-Safety
+
 ## [0.1.0] - 20/05/2020
 
 statusBarIconColor, content
