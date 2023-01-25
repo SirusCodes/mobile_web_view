@@ -1,4 +1,4 @@
-library mobile_web_view;
+library flutter_mobile_view_wrapper;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

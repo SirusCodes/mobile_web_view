@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_web_view/mobile_web_view.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_mobile_first_wrapper/mobile_web_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -56,7 +55,7 @@ class Content extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             GestureDetector(
-              onTap: () => launch("https://pub.dev/packages/mobile_web_view"),
+              onTap: () => {},
               child: Text(
                 "pub.dev",
                 style: TextStyle(
@@ -68,7 +67,7 @@ class Content extends StatelessWidget {
               ),
             ),
             GestureDetector(
-              onTap: () => launch("https://github.com/SirusCodes/mobile_web_view"),
+              onTap: () {},
               child: Image.asset(
                 "assets/github.png",
                 height: 60,
