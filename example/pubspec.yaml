@@ -23,7 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  mobile_web_view:
+  flutter_mobile_first_wrapper:
     path: ../
   url_launcher: ^5.4.7
 

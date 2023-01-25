@@ -18,15 +18,18 @@ class MyApp extends StatelessWidget {
       //
       // Wrap your home widget with MobileWebView
       //
-      home: MobileWebView(
-        // Sets background color
-        backgroundColor: Colors.blueGrey,
-        // Sets status bar Icon Color
-        statusBarIconColor: Colors.white,
-        // Content will build widgets to right side
-        content: Content(),
-        // Home Widget
-        child: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Center(
+        child: MobileWebView(
+          
+          // Sets background color
+          backgroundColor: Colors.blueGrey,
+          // Sets status bar Icon Color
+          statusBarIconColor: Colors.white,
+          // Content will build widgets to right side
+          content: Content(),
+          // Home Widget
+          child: MyHomePage(title: 'Flutter Demo Home Page'),
+        ),
       ),
     );
   }
